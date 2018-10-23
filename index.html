@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head><title></title></head>
+    <body>
+        <script>
+        fetch("http://localhost:3000/mysite").then((resp)=>{
+            return resp.json();
+        }).then((json)=>{
+            console.log(json);
+            document.body.innerHTML = json.name + ":" +json.number;
+        })
+        </script>
+    </body>
+</html>
