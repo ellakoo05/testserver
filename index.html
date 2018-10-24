@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head><title></title></head>
-    <body>
-        <script>
-        fetch("https://testserver555.herokuapp.com/").then((resp)=>{
-            return resp.json();
-        }).then((json)=>{
-            console.log(json);
-            document.body.innerHTML = json.name + ":" +json.number;
-        })
-        </script>
-    </body>
+  <head><title></title></head>
+  <body>
+    <script>
+      fetch("https://testserver555.herokuapp.com/fuelhubdata").then((resp)=>{
+        return resp.json();
+      }).then((json)=>{
+        console.log(json);
+        //document.body.innerHTML = json.name +":"+json.number;
+      })
+    </script>
+  </body>
 </html>
