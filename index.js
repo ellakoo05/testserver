@@ -26,14 +26,14 @@ app.get("/fuelhubdata", (req, resp)=>{
       var len = $('.styles__price___3DxO5', html).length,
           pr = $('.styles__price___3DxO5', html),
           addr = $('.styles__address___8IK98', html),
-          name = $('.style__header3___3T2tm', html);
+          station = $('.styles__stationNameHeader___24lb3', html);
 
       //console.log(len);
       for(var i=0; i<len; i++){
         prices.push({
           price: pr[i].children[0].data,
           addr:addr[i].children[0].data,
-          name:name[i].children[0].data,
+          station:station[i].children[0].data,
         });
       }
 
