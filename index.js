@@ -13,12 +13,12 @@ app.use(function(req, res, next) {
 
 app.get("/fuelhubdata", (req, resp)=>{
   //resp.end("Hi welcome");
-  let url = 'https://www.gasbuddy.com/home?lng=-123.12073750000002&lat=49.2827291&fuel=1&cursor=0';
+  let url = 'https://www.gasbuddy.com/home?search=british%20columbia%20institute%20of%20technology&fuel=1&cursor=0';
   var cursor = 0;
   var prices = [];
 
   function parseurl(){
-    url = 'https://www.gasbuddy.com/home?lng=-123.12073750000002&lat=49.2827291&fuel=1&cursor='+cursor;
+    url = 'https://www.gasbuddy.com/home?search=british%20columbia%20institute%20of%20technology&fuel=1&cursor='+cursor;
 
     rp(url).then(function(html){
       //success!
