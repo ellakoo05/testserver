@@ -26,7 +26,8 @@ app.get("/fuelhubdata", (req, resp)=>{
       var len = $('.styles__price___3DxO5', html).length,
           pr = $('.styles__price___3DxO5', html),
           addr = $('.styles__address___8IK98', html),
-          station = $('.styles__stationNameHeader___24lb3', html);
+          station = $('.styles__stationNameHeader___24lb3', html),
+          logo = $('styles__logoImage___2zpSA', html);
 
       //console.log(len);
       for(var i=0; i<len; i++){
@@ -34,6 +35,7 @@ app.get("/fuelhubdata", (req, resp)=>{
           price: pr[i].children[0].data,
           addr:addr[i].children[0].data,
           station:station[i].children[0].data,
+          logo:logo[i].children[0].data,
         });
       }
 
