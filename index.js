@@ -30,7 +30,10 @@ app.get("/fuelhubdata", (req, resp)=>{
           pr = $('.styles__price___3DxO5', html),
           addr = $('.styles__address___8IK98', html),
           station = $('.styles__stationNameHeader___24lb3', html);
-
+          var latitude = req.headers.latitude;
+          var longitude = req.headers.longitude;
+          console.log(latitude);
+          console.log(longitude);
       //console.log(len);
       for(var i=0; i<len; i++){
         prices.push({
