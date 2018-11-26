@@ -24,7 +24,7 @@ app.get("/fuelhubdata", (req, resp)=>{
   // console.log(longitude);
   function parseurl(){
     url = 'https://www.gasbuddy.com/home?search=british%20columbia%20institute%20of%20technology&fuel=1&cursor='+cursor;
-    url2 = 'https://www.gasbuddy.com/home?search=' + latitude + '%20N%2C%20' + longitude + '%20W&fuel=1&cursor='+cursor;
+    // url2 = 'https://www.gasbuddy.com/home?search=' + latitude + '%20N%2C%20' + longitude + '%20W&fuel=1&cursor='+cursor;
 
 
     rp(url).then(function(html){
