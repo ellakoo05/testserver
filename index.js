@@ -16,7 +16,10 @@ app.get("/fuelhubdata", (req, resp)=>{
   let url = 'https://www.gasbuddy.com/home?search=british%20columbia%20institute%20of%20technology&fuel=1&cursor=0';
   var cursor = 0;
   var prices = [];
-
+  var latitude = req.headers.latitude;
+  var longitude = req.headers.longitude;
+  console.log(latitude);
+  console.log(longitude);
   function parseurl(){
     url = 'https://www.gasbuddy.com/home?search=british%20columbia%20institute%20of%20technology&fuel=1&cursor='+cursor;
 
