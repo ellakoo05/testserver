@@ -20,6 +20,7 @@ app.get("/fuelhubdata", (req, resp)=>{
   let url2 = 'https://www.gasbuddy.com/home?search=' + latitude + '%20N%2C%20' + longitude + '%20W&fuel=1&cursor=0';
   var cursor = 0;
   var prices = [];
+  console.log(req);
   console.log(latitude);
   console.log(longitude);
   function parseurl(){
