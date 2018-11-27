@@ -14,20 +14,20 @@ app.use(function(req, res, next) {
 app.get("/fuelhubdata", (req, resp)=>{
   //resp.end("Hi welcome");
 
-  // var latitude = req.headers.latitude;
-  // var longitude = req.headers.longitude;
+  var latitude = req.headers.latitude;
+  var longitude = req.headers.longitude;
   let url = 'https://www.gasbuddy.com/home?search=british%20columbia%20institute%20of%20technology&fuel=1&cursor=0';
-  // let url2 = 'https://www.gasbuddy.com/home?search=' + latitude + '%20N%2C%20' + longitude + '%20W&fuel=1&cursor=0';
+  let url2 = 'https://www.gasbuddy.com/home?search=' + latitude + '%20N%2C%20' + longitude + '%20W&fuel=1&cursor=0';
   var cursor = 0;
   var prices = [];
-  // console.log(latitude);
-  // console.log(longitude);
+  console.log(latitude);
+  console.log(longitude);
   function parseurl(){
     url = 'https://www.gasbuddy.com/home?search=british%20columbia%20institute%20of%20technology&fuel=1&cursor='+cursor;
-    // url2 = 'https://www.gasbuddy.com/home?search=' + latitude + '%20N%2C%20' + longitude + '%20W&fuel=1&cursor='+cursor;
+    url2 = 'https://www.gasbuddy.com/home?search=' + latitude + '%20N%2C%20' + longitude + '%20W&fuel=1&cursor='+cursor;
 
 
-    rp(url).then(function(html){
+    rp(url2).then(function(html){
       //success!
       //console.log(html);
       var len = $('.styles__price___3DxO5', html).length,
