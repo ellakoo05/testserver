@@ -37,6 +37,7 @@ app.get("/fuelhubdata", (req, resp)=>{
           station = $('.styles__stationNameHeader___24lb3', html),
           logo=$('.styles__logoImageContainer___3nN65', html)
           
+          console.log(logo)
       //console.log(len);
       for(var i=0; i<len; i++){
         prices.push({
