@@ -36,8 +36,7 @@ app.get("/fuelhubdata", (req, resp)=>{
           addr = $('.styles__address___8IK98', html),
           station = $('.styles__stationNameHeader___24lb3', html)
 
-          var imgs = html.getElementsByTagName("img");
-          console.log ("imgs: ",imgs);
+          console.log ("html: ",html);
 
 
       //console.log(len);
