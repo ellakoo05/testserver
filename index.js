@@ -35,8 +35,9 @@ app.get("/fuelhubdata", (req, resp)=>{
           pr = $('.styles__price___3DxO5', html),
           addr = $('.styles__address___8IK98', html),
           station = $('.styles__stationNameHeader___24lb3', html),
-          logo = $('styles__logoImageContainer___3nN65', img)
+          logo = $('styles__logoImageContainer___3nN65', html)
           console.log ("html: ",html);
+          console.log ("logo: ",logo);
 
 
       //console.log(len);
