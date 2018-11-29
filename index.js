@@ -43,7 +43,7 @@ app.get("/fuelhubdata", (req, resp)=>{
         prices.push({
           price: pr[i].children[0].data,
           addr:addr[i].children[0].data,
-          station:station[i].children[0].data,
+          station:station[i].children[0].data
           // logo:logo[i].children[0].data
         });
       }
