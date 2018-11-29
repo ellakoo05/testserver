@@ -44,7 +44,7 @@ app.get("/fuelhubdata", (req, resp)=>{
           price: pr[i].children[0].data,
           addr:addr[i].children[0].data,
           station:station[i].children[0].data,
-          logo:logo[i].src
+          logo:logo[i]
         });
       }
 
